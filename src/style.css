@@ -1,96 +1,142 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* All of the site */
+
+body{
+    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.pageContainer{
+    position: relative;
+    min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h1, h2, p{
+    margin: auto;
+    width: 50%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+h2{
+    font-weight: 600;
 }
 
-.card {
-  padding: 2em;
+.btn{
+    background-color: green;
+    border-color: green;
+}
+.btn:hover{
+    background-color: rgb(5, 73, 5);
+    border-color: rgb(5, 73, 5);
 }
 
-.read-the-docs {
-  color: #888;
+.center{
+    margin: auto;
+    width: 50%;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.separatingBorder{
+    border-top: 2px solid rgb(0, 0, 0);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Navbar */
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.navbar-nav li{
+    margin-left:15px;
+    margin-right:15px;
+}
+
+/* About me section */
+
+.imageMe{
+    margin: auto;
+    max-height: 450px;
+    margin-top: 7px;
+    margin-bottom: 7px;   
+}
+
+.centerText{
+    align-content: center;
+}
+
+/*  Portfolio section */
+
+.card{
+    width: 19rem;
+}
+
+.card-text{
+    width: auto;
+}
+
+.btn{
+    margin-top: 5px;
+}
+
+.padding-ul{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* Referens section */
+
+
+.quote-box{
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+/* Contactform section */
+
+.emailBox{
+    width: 300px;
+    border-radius: 5px;
+    padding: 7px
+}
+
+
+.contactBorder{
+    border: 1px solid gray;
+}
+
+textarea{
+    resize: none;
+}
+
+/* Footer section */
+
+main{
+    padding-bottom: 115px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    padding-top: 20px;
+}
+
+footer img{
+    width: 30px;
 }
